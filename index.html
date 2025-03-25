@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="author" content="Chulii Mykhailo">
     <title>Головна сторінка</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        a{
+            color:darkmagenta;
+        }
+        #secondParagraph{
+            margin-top: 100px;
+        }
+        .simpleTable{
+            margin:50px 600px 50px 600px;
+            display: flexbox;
+        }
+    </style>
 </head>
 <body>
-    <p>lskdjafvhskjavdbakf.sdjvbksdfajvkjdfv</p>
+    <h1 id="h1"><font color="blue" face="Times New Roman"><i>Головна сторінка</i></font></h1>
+    <p><em>Автомобілі — це один із найбільш поширених та важливих видів транспорту, 
+        який використовують для перевезення людей і вантажів. Вони стали невід'ємною частиною сучасного життя, надаючи зручність 
+        і мобільність у повсякденних справах. Існує безліч типів автомобілів,
+        від компактних легкових моделей до величезних вантажівок і позашляховиків.
+        Вони різняться за призначенням, розмірами, характеристиками двигунів і технологіями.</em><a href="#secondParagraph">посилання на другий абзац</a></p>
+    <ul>
+        <li><a href="./gallery.html">Галерея</a></li>
+        <li><a href="./news.html">Новини у світі авто</a></li>
+        <li><a href="./comparison.html">Порівняння</a></li>
+    </ul>
+    <table border="1" class="simpleTable" >
+        <colgroup>
+            <col span="1" style="background-color: rgb(214, 245, 245);">
+            <col span="1" style="background-color: rgb(188, 230, 230);">
+            <col span="1" style="background-color: rgb(179, 216, 216);">
+        </colgroup>
+        <tr style="background-color: plum;">
+            <th >Картинка</th>
+            <th >Посилання</th>
+            <th >Опис</th>
+        </tr>
+        <tr>
+            <td><img src="./images/bmw.png" width="70" height="70" alt="BMWlogo"></td>
+            <td ><a href="https://www.bmw.ua/uk/index.html">офіційний сайт</a></td>
+            <td>німецький автобудівний та авіамоторний концерн</td>
+        </tr>
+        <tr>
+            <td><img src="./images/audi.png" width="70" height="70" alt="BMWlogo"></td>
+            <td ><a href="https://www.ferrari.com/en-FI">офіційний сайт</a></td>
+            <td>італійський автобудівний та авіамоторний концерн</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Ferrari_Logo.svg.png" width="70" height="70" alt="BMWlogo"></td>
+            <td ><a href="https://www.bmw.ua/uk/index.html">офіційний сайт</a></td>
+            <td>німецький автобудівний та авіамоторний концерн</td>
+        </tr>
+        <tr>
+            <td><img src="./images/Koenigsegg-logo-1994-2048x2048.png" width="70" height="70" alt="BMWlogo"></td>
+            <td ><a href="https://www.koenigsegg.com/home">офіційний сайт</a></td>
+            <td>швецький автобудівний та авіамоторний концерн</td>
+        </tr>
+    </table>
+    <div style="margin-left: 200px;">
+        <img src="./images/toyota-rav4.webp" width="500px" height="300px" style="display: flexbox; ">
+        <img src="./images/BMW-X2-M35i.webp" width="500px" height="300px" style="display: flexbox;">
+        <img src="./images/ilyustratyvne-foto_large.jpg" width="500px" height="300px" style="display: flexbox;">
+    </div>
+    
+    <p id="secondParagraph">З розвитком технологій автомобілі зазнають постійних змін. Сучасні моделі оснащені 
+        різноманітними системами безпеки, комфортними салонами, інноваційними 
+        інформаційними системами, а також впроваджуються нові типи двигунів, 
+        як-от електричні та гібридні. Виробники прагнуть зробити автомобілі більш економічними, 
+        екологічними та зручними.<a href="#h1">Повернутись</a></p>
 </body>
 </html>
