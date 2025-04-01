@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="author" content="Chulii Mykhailo">
     <title>Порівняння авто</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        a{
+            color:darkmagenta;
+        }
+        #secondParagraph{
+            margin-top: 00px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Порівняння</h1>
+    <p><font size="4" color="green"><i>На цій сторінці ви зможете порівнювати авто</i></font></p>
+    <ul>
+        <li><a href="./index.html">На головну</a></li>
+        <li><a href="./gallery.html">Галерея</a></li>
+        <li><a href="./news.html">Новини у світі авто</a></li>
+    </ul>
+    <table cellspacing="5" cellpadding="10" border="1">
+        <caption><font size="4" color="darkcyan">Порівняння найпопулярніших моделей</font></caption>
+        <colgroup>
+            <col span="2"style="background-color: #f2f2f2;">
+            <col span="4" style="background-color: #fff;">
+        </colgroup>
+   
+        <thead>
+            <tr >
+                <th>Модель</th>
+                <th >Тип</th>
+                <th>Ціна</th>
+                <th colspan="3">Характеристики</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Ford Mustang</td>
+                <td rowspan="2">Купе</td>
+                <td>$55,000</td>
+                <td >300 к. сил</td>
+                <td>500 Н/М</td>
+                <td>3 л. бензин</td>
+                
+            </tr>
+       
+            <tr>
+                <td>Chevrolet Camaro</td>
+                
+                <td>$50,000</td>
+                <td >400 к. сил</td>
+                <td>600 Н/М</td>
+                <td>4 л. бензин</td>
+            </tr>
+           
+            <tr>
+                <td rowspan="2">Tesla Model S</td>
+                <td>Седан</td>
+                <td>$90,000</td>
+                <td >300 Кв.</td>
+                <td>1000 Н/М</td>
+                <td rowspan="2">160 Кв/год</td>
+            </tr>
+            <tr>
+                <td>Електричний</td>
+                <td>$90,000</td>
+                <td >300 к. сил</td>
+                <td>500 Н/М</td>
+                
+            <tr>
+                <td>BMW X5</td>
+                <td>Позашляховик</td>
+                <td>$75,000</td>
+                <td >200 к. сил</td>
+                <td>300 Н/М</td>
+                <td>2 л. дизель</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
