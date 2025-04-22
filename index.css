@@ -157,7 +157,8 @@ ul, ol, dl {
     color: rgb(191, 109, 191);
     font-size: 30px;
   }
-  a img{
+
+  a>img{
     border-radius: 10px;
 
   }
