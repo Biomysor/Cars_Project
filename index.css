@@ -20,17 +20,24 @@ h1{
     color: darkmagenta;
     font-size: 23px;
 }
-a{
-    color:darkmagenta;
+a:link{
+    color:rgb(145, 32, 145);
     
 }
-a:hover{
-    color:rgb(0, 153, 102) !important;
+a:visited {
+  color: rgb(255, 0, 255);
 }
+a:hover{
+    color:rgb(0, 153, 102) ;
+}
+a:active{
+  color:rgb(224, 110, 110);
+}
+
 #secondParagraph{
     margin-top: 100px;
 }
-div{
+.galleryDiv{
     float:inline-start;
     margin-left: 400px;
 }
@@ -166,3 +173,70 @@ ul, ol, dl {
     transform: scale(1.05);
     transition: transform 0.5s ease-in-out;
   }
+.positioned {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  background-color: #f9c;
+  padding: 10px;
+  z-index: 2;
+}
+
+h1::first-letter{
+  border: peru solid 1px;
+}
+h1::before{
+  content: "🏎️";
+}
+
+h1::after{
+  content: "🏁";
+}
+ul li:first-child {
+  font-weight: bold;
+  color: rgb(223, 143, 142);
+}
+.firstDiv{
+  width: 200px;
+  height: 80px;
+  background-color: #add8e6;
+  margin: 10px;
+  float: left;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
+}
+.firstDiv span {
+  display: block;
+  
+  color: darkblue;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.secondDiv{
+  width: 200px;
+  height: 80px;
+  background-color: #add8e6;
+  margin: 10px;
+  float: left;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
+}
+.secondDiv span {
+  display: block;
+  color: darkblue;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input:focus{
+  color: #ac41c4;
+}
