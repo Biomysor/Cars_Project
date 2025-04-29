@@ -202,7 +202,6 @@ ul li:first-child {
   background-color: #add8e6;
   margin: 10px;
   float: left;
- 
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
@@ -219,9 +218,7 @@ ul li:first-child {
   background-color: #add8e6;
   margin: 10px;
   float: left;
-
   text-align: center;
- 
   border-radius: 8px;
   box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
 }
@@ -234,8 +231,8 @@ ul li:first-child {
 
 .clear::after {
   content: "";
-  display: table;
-  clear: both;
+  display:contents;
+  clear:left;
 }
 input:focus{
   color: #ac41c4;
