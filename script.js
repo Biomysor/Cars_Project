@@ -85,12 +85,14 @@ list.forEach(function(item) {
   });
   const h2 = document.querySelector("h2");
 h2.after("Тут ви маєте змогу ознайомитись з нашим сайтом"); 
-const oldPara = document.querySelectorAll("p")[1];
-const newPara = document.createElement("p");
-newPara.innerHTML = '<p>Для повернення на початок натистіть</p><a href="#h1">Повернутись</a></p>';
-oldPara.replaceWith(newPara);
-const img = document.querySelectorAll("img")[6]; // перше зображення
-img.remove(); // видаляє його
+setTimeout(() => {
+    const oldPara = document.querySelectorAll("p")[1];
+    const newPara = document.createElement("p");
+    newPara.innerHTML = '<p>Для повернення на початок натистіть</p><a href="#h1">Повернутись</a></p>';
+    oldPara.replaceWith(newPara);
+    const img = document.querySelectorAll("img")[6]; 
+    img.remove(); 
+}, 5000);
 
 
 

@@ -14,4 +14,3 @@ par.outerHTML = "<p>Новини уже завтра</p>";
 const span = document.querySelector("span");
 const spanTextNode = span.firstChild; 
 spanTextNode.nodeValue = "New Keoniggseg Jesko record";
-
