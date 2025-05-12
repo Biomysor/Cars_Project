@@ -1,4 +1,7 @@
-function dialogWithUser() {
+
+const lab6 = confirm("Лабараторна №6");
+if(lab6){
+  function dialogWithUser() {
     const confirmAction = confirm("Хочеш продовжити?");
   
     if (confirmAction) {
@@ -55,44 +58,46 @@ function dialogWithUser() {
   setTimeout(()=>{
     document.body.style.backgroundColor="";
   },30000);
-  document.getElementById("galleryButton").onclick=function(){
-    location.href="gallery.html"
-  }
+ 
   
-const table = document.querySelector("table");
+  const table = document.querySelector("table");
 
 
-const caption = document.createElement("caption");
+  const caption = document.createElement("caption");
 
 
-const captionT = document.createTextNode("Це таблиця відомих автокомпаній");
+  const captionT = document.createTextNode("Це таблиця відомих автокомпаній");
 
 
-caption.appendChild(captionT);
+  caption.appendChild(captionT);
 
-caption.style.fontWeight = "bold";
-caption.style.fontSize = "18px";
-caption.style.marginBottom = "10px";
+  caption.style.fontWeight = "bold";
+  caption.style.fontSize = "18px";
+  caption.style.marginBottom = "10px";
 
 
 
-table.insertBefore(caption, table.firstChild);
-const footer = document.querySelector("footer");
-footer.append(" — Оновлено 2025");
-const list = document.querySelectorAll("li");
-list.forEach(function(item) {
-    item.prepend("🚗 ");
-  });
-  const h2 = document.querySelector("h2");
-h2.after("Тут ви маєте змогу ознайомитись з нашим сайтом"); 
-setTimeout(() => {
-    const oldPara = document.querySelectorAll("p")[1];
-    const newPara = document.createElement("p");
-    newPara.innerHTML = '<p>Для повернення на початок натистіть</p><a href="#h1">Повернутись</a></p>';
-    oldPara.replaceWith(newPara);
-    const img = document.querySelectorAll("img")[6]; 
-    img.remove(); 
-}, 5000);
+  table.insertBefore(caption, table.firstChild);
+  const footer = document.querySelector("footer");
+  footer.append(" — Оновлено 2025");
+  const list = document.querySelectorAll("li");
+  list.forEach(function(item) {
+      item.prepend("🚗 ");
+    });
+    const h2 = document.querySelector("h2");
+  h2.after("Тут ви маєте змогу ознайомитись з нашим сайтом"); 
+  setTimeout(() => {
+      const oldPara = document.querySelectorAll("p")[1];
+      const newPara = document.createElement("p");
+      newPara.innerHTML = '<p>Для повернення на початок натистіть</p><a href="#h1">Повернутись</a></p>';
+      oldPara.replaceWith(newPara);
+      const img = document.querySelectorAll("img")[6]; 
+      img.remove(); 
+  }, 5000);
+}
+document.getElementById("galleryButton").onclick=function(){
+  location.href="gallery.html"
+}
 
 
 
