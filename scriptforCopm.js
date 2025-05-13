@@ -89,7 +89,7 @@ function handleMoreInfo(event, info) {
     const bmwwInfo = "BMW M5 - спортивна версія автомобілів BMW п'ятої серії. Виробляється дочірною компанією BMW M. Перше покоління було представлено в 1984 році.";
     toggleCarTable("BMWM5", "bmw-table2", bmwTableHTML, bmwwInfo);
   };
-// Підсвічування елементів списку
+
 const carList = document.getElementById("carList");
 
 carList.addEventListener("click", function(event) {
