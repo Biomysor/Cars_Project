@@ -20,7 +20,7 @@ const adHandler1 = {
   const adHandler2 = {
     handleEvent(event) {
    
-      alert("ввввв")
+      alert("Завітайй на дилерський сайт BMW введи промокод misha і отрима 5% знижку на усі авто")
       console.log("Реклама показана через:", event.currentTarget);
     }
   };
