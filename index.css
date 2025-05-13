@@ -68,7 +68,9 @@ ul, ol, dl {
     padding: 15px;
     border-radius: 8px;
   }
-  
+  .highlighted {
+    background-color: lightgreen;
+  }
 
   ol {
     list-style-type: decimal;
@@ -260,3 +262,84 @@ input:focus{
 #galleryButton:hover{
   transform: scale(1.1);
 }
+#hOfComp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2px;
+}
+.compButns button{
+  padding: 10px;
+  margin: 20px;
+
+  text-align: center;
+  background-color: greenyellow;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.compButns button:hover{
+  transform: scale(1.1);
+}
+.car-table, .car-table2 {
+  width: 48%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+
+.car-table {
+  float: right;
+}
+
+.car-table2 {
+  float: left;
+}
+
+.car-table th, .car-table td,
+.car-table2 th, .car-table2 td {
+  color: #0b1e3b;
+  background-color: #d1a0777e;
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+.photo-cell {
+  background-color: #6189bd91 !important;
+  height: 200px;
+
+}
+.more-button, #showAdBtn {
+  background-color: #006400; 
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more-button:hover ,#showAdBtn:hover {
+  transform: scale(1.1); 
+  background-color: #008000; 
+}
+.menu button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 14px;
+}
+
