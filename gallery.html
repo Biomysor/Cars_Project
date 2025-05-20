@@ -4,43 +4,40 @@
     <meta charset="UTF-8">
     <meta name="author" content="Chulii Mykhailo">
     <title>Галерея</title>
-    <style>
-        body{
-            background-color: lightcyan;
-        }
-        a{
-            color:darkmagenta;
-        }
-        #secondParagraph{
-            margin-top: 00px;
-        }
-        div{
-            float:inline-start;
-            margin-left: 400px;
-        }
-    </style>
+    <link  rel="stylesheet" href="./index.css">
+   
 </head>
 <body>
     <h1>Галерея</h1>
     <ul>
-        <li><a href="./index.html">На головну</a></li>
-        <li><a href="./news.html">Новини у світі авто</a></li>
-        <li><a href="./comparison.html">Порівняння</a></li>
+        <li class="Menu"><a href="./gallery.html">Галерея</a></li>
+        <li class="Menu"><a href="./index.html">Головна сторінка</a></li>
+        <li class="Menu"><a href="./news.html">Новини у світі авто</a></li>
+        <li class="Menu"><a href="./comparison.html">Порівняння</a></li>
     </ul>
-    <div>
+    <p>Тут ви зможете відкрити зображення автомобіля збільшити його та зменшити.</p>
+    <div class="galleryDiv">
+       <strong> <p>Автомобілі Koenigsegg</p></strong>
         <a href="./images/639ce0c0a12eeegera.webp" target="_blank">
-            <img src="./images/639ce0c0a12eeegera.webp" width="300" height="200" alt="Зображення">
+            <img src="./images/639ce0c0a12eeegera.webp" alt="Зображення">
         </a>
-        <a href="./images/2015-koenigsegg-one1-first-drive-review-car-and-driver-photo-654233-s-original.jpg" target="_blank">
-            <img src="./images/2015-koenigsegg-one1-first-drive-review-car-and-driver-photo-654233-s-original.jpg" width="300" height="200" alt="Зображення">
+        <a href="./images/Large Image_52.jpg" target="_blank">
+            <img src="./images/Large Image_52.jpg"  alt="Зображення">
         </a>
         <a href="./images/koenigsegg-jesko-absolut.jpg" target="_blank">
-            <img src="./images/koenigsegg-jesko-absolut.jpg" width="300" height="200" alt="Зображення">
+            <img src="./images/koenigsegg-jesko-absolut.jpg"  alt="Зображення">
         </a>
         <a href="./images/TG_DSC0155.jpg" target="_blank">
-            <img src="./images/TG_DSC0155.jpg" width="300" height="200" alt="Зображення">
+            <img src="./images/TG_DSC0155.jpg"  alt="Зображення">
         </a>
+      
     </div>
-    
+    <h2>Інтерактив дня введііть своє улюблене авто</h2>
+    <p><input type="text" value="Ваше авто"></p>
+
+    <button id="showAdBtn">Показати рекламу</button>
+    <div id="adContainer"></div>
+    <script src="./Listener.js"></script>
+    <script src="./Mouse.js"></script>
 </body>
 </html>

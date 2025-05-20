@@ -1,0 +1,348 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    color:blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold !important;
+    border-top: 2px dashed rgb(107, 179, 0);
+    border-bottom: 2px dashed rgb(107, 179, 0);
+}
+ body p{
+    font-size: large;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+    line-height: 1.5;
+    font-weight: bold;
+}
+#newsP{
+    color: darkmagenta;
+    font-size: 23px;
+}
+a:link{
+    color:rgb(145, 32, 145);
+    
+}
+a:visited {
+  color: rgb(255, 0, 255);
+}
+a:hover{
+    color:rgb(0, 153, 102) ;
+}
+a:active{
+  color:rgb(224, 110, 110);
+}
+
+#secondParagraph{
+    margin-top: 100px;
+}
+.galleryDiv{
+    float:inline-start;
+    margin-left: 400px;
+}
+.simpleTable{
+    margin:50px 600px 50px 600px;
+    display: flexbox;
+}
+iframe{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #000;
+    z-index: 100;
+}
+ul, ol, dl {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.5 !important;
+    color: #333;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: disc !important;
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .highlighted {
+    background-color: lightgreen;
+  }
+
+  ol {
+    list-style-type: decimal;
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+
+  dl {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-left: 4px solid #ffa726;
+    border-radius: 6px;
+  }
+  
+  dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e65100;
+  }
+  
+  dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #4e342e;
+  }
+  img{
+    display: inline-block;
+    height: auto;
+    max-width: 40%;
+    align-items: center;
+    margin:10px;
+    padding: auto;
+  }
+  table {
+    width: auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    margin: 0 auto;
+   
+  }
+  table th, td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  
+  table th {
+    background-color: #5c9ed4;
+    color: #133568;
+    font-weight: bold;
+  }
+  .secondT{
+    background-color: #3d7ed4;
+  }
+ .firstT{
+    background-color: hsl(234, 100%, 79%);
+ }
+  table caption{
+    text-align: center;
+    color: darkcyan;
+    font-size: larger;
+    text-decoration: underline;
+  }
+  table img{
+    max-width: 30%;
+    height: auto;
+  }
+  col[span="2"]{
+    background-color: #ceb7b7;
+  }
+  col[span="4"]{
+    background-color: #cc9b9b;
+  }
+
+  span+strong{
+    font-style: italic;
+    text-decoration: underline;
+    color:#795b88;
+  }
+  p>span{
+    font-style: italic;
+    color: #000;
+    text-decoration:underline;
+  }
+  div p{
+    text-align: center;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    color: rgb(191, 109, 191);
+    font-size: 30px;
+  }
+
+  a>img{
+    border-radius: 10px;
+
+  }
+  img:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+  }
+.positioned {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  background-color: #f9c;
+  padding: 10px;
+  z-index: 2;
+}
+
+h1::first-letter{
+  border: peru solid 1px;
+}
+h1::before{
+  content: "🏎️";
+}
+
+h1::after{
+  content: "🏁";
+}
+ul li:first-child {
+  font-weight: bold;
+  color: rgb(223, 143, 142);
+}
+.firstDiv{
+  width: 200px;
+  height: 80px;
+  background-color: #add8e6;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
+}
+.firstDiv span {
+  display: block;
+  color: darkblue;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.secondDiv{
+  width: 200px;
+  height: 80px;
+  background-color: #add8e6;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
+}
+.secondDiv span {
+  display: block;
+  color: darkblue;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.news{
+  width: 200px;
+  height: 80px;
+  background-color: #add8e6;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(245, 0, 0, 0.458);
+}
+
+.clear::after {
+  content: "";
+  display:contents;
+  clear:left;
+}
+input:focus{
+  color: #ac41c4;
+}
+#galleryButton{
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  background-color: greenyellow;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+#galleryButton:hover{
+  transform: scale(1.1);
+}
+#hOfComp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2px;
+}
+.compButns button{
+  padding: 10px;
+  margin: 20px;
+
+  text-align: center;
+  background-color: greenyellow;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.compButns button:hover{
+  transform: scale(1.1);
+}
+.car-table, .car-table2 {
+  width: 48%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+
+.car-table {
+  float: right;
+}
+
+.car-table2 {
+  float: left;
+}
+
+.car-table th, .car-table td,
+.car-table2 th, .car-table2 td {
+  color: #0b1e3b;
+  background-color: #d1a0777e;
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+.photo-cell {
+  background-color: #6189bd91 !important;
+  height: 200px;
+
+}
+.more-button, #showAdBtn {
+  background-color: #006400; 
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more-button:hover ,#showAdBtn:hover {
+  transform: scale(1.1); 
+  background-color: #008000; 
+}
+.menu button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 14px;
+}
+.Menu.hovered{
+   background-color: rgb(110, 14, 91);
+   color: rgb(209, 159, 159);
+}

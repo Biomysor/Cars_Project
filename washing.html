@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помий машину!!!!</title>
+    <link  rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <style>
+        #drag{
+            z-index: 4 !important;
+            position: absolute;
+            max-width: 300px !important;
+            max-height: auto !important;
+            float: left;
+            
+        }
+        #veryDirty{
+            z-index: 3;
+            position: absolute;
+            top: 220px;
+            left: 20%;
+            padding-bottom: 20px;
+            max-width: 60%;
+            max-height: auto;
+            transition: opacity 2s ease;
+        }
+        #veryDirty:hover{
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+        #dirty{
+            z-index: 2;
+            position: absolute;
+            top: 220px;
+            left: 20%;
+            padding-bottom: 20px;
+            max-width: 60%;
+            max-height: auto;
+            transition: opacity 2s ease;
+        }
+        #dirty:hover{
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+        #washed{
+            z-index: 1;
+            position: absolute;
+            top: 220px;
+            left: 20%;
+            padding-bottom: 20px;
+            max-width: 60%;
+            max-height: auto;
+        }
+        #washed:hover{
+            transform: scale(1.05);
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+    <h1>Помийте це авто!!!!</h1>
+    <ul>
+        <li class="Menu"><a href="./index.html">Головна сторінка</a></li>
+        <li class="Menu"><a href="./gallery.html">Галерея</a></li>
+        <li class="Menu"><a href="./news.html">Новини у світі авто</a></li>
+        <li class="Menu"><a href="./comparison.html">Порівняння</a></li>
+    </ul>
+    <img id="veryDirty" src="./images/alfaromevdirt.png">
+    <img id="dirty" src="./images/alfaromeoalmost.png">
+    <img id="washed" src="./images/alfa.jpeg">
+    <img id="drag" src="./images/SpanchBob.png"  >
+   
+    
+    <script src="./Drag.js"></script>
+    <script src="./Mouse.js"></script>
+</body>
+</html>

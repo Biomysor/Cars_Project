@@ -4,70 +4,65 @@
     <meta charset="UTF-8">
     <meta name="author" content="Chulii Mykhailo">
     <title>Головна сторінка</title>
-    <style>
-        body{
-            background-color: lightcyan;
-        }
-        a{
-            color:darkmagenta;
-        }
-        #secondParagraph{
-            margin-top: 100px;
-        }
-        .simpleTable{
-            margin:50px 600px 50px 600px;
-            display: flexbox;
-        }
-    </style>
+    <link  rel="stylesheet" href="./index.css">
+   
 </head>
 <body>
-    <h1 id="h1"><font color="blue" face="Times New Roman"><i>Головна сторінка</i></font></h1>
+    <script>
+       /* document.write("<h1>Вітаємо на сайті авто!</h1>");
+
+        alert("Вітаємо на нашій сторінці про автомобілі!");
+        let name = prompt("Як вас звати?");
+        confirm(`Привіт, ${name}!`); */
+        
+    </script>
+    
+    <h2 id="h1">Головна сторінка</h2>
     <p><em>Автомобілі — це один із найбільш поширених та важливих видів транспорту, 
         який використовують для перевезення людей і вантажів. Вони стали невід'ємною частиною сучасного життя, надаючи зручність 
         і мобільність у повсякденних справах. Існує безліч типів автомобілів,
         від компактних легкових моделей до величезних вантажівок і позашляховиків.
         Вони різняться за призначенням, розмірами, характеристиками двигунів і технологіями.</em><a href="#secondParagraph">посилання на другий абзац</a></p>
     <ul>
-        <li><a href="./gallery.html">Галерея</a></li>
-        <li><a href="./news.html">Новини у світі авто</a></li>
-        <li><a href="./comparison.html">Порівняння</a></li>
+        <li class="Menu"><a href="./index.html">Головна сторінка</a></li>
+        <li class="Menu"><a href="./gallery.html">Галерея</a></li>
+        <li class="Menu"><a href="./news.html">Новини у світі авто</a></li>
+        <li class="Menu"><a href="./comparison.html">Порівняння</a></li>
     </ul>
-    <table border="1" class="simpleTable" >
-        <colgroup>
-            <col span="1" style="background-color: rgb(214, 245, 245);">
-            <col span="1" style="background-color: rgb(188, 230, 230);">
-            <col span="1" style="background-color: rgb(179, 216, 216);">
-        </colgroup>
-        <tr style="background-color: plum;">
+    <table  class="simpleTable" >
+        
+        <tr >
             <th >Картинка</th>
             <th >Посилання</th>
             <th >Опис</th>
         </tr>
-        <tr>
-            <td><img src="./images/bmw.png" width="70" height="70" alt="BMWlogo"></td>
+        <tr class="firstT">
+            <td><img src="./images/bmw.png"alt="BMWlogo"></td>
             <td ><a href="https://www.bmw.ua/uk/index.html">офіційний сайт</a></td>
             <td>німецький автобудівний та авіамоторний концерн</td>
         </tr>
-        <tr>
-            <td><img src="./images/audi.png" width="70" height="70" alt="BMWlogo"></td>
+        <tr class="secondT">
+            <td><img src="./images/audi.png"  alt="AUDIlogo"></td>
             <td ><a href="https://www.ferrari.com/en-FI">офіційний сайт</a></td>
             <td>італійський автобудівний та авіамоторний концерн</td>
         </tr>
-        <tr>
-            <td><img src="./images/Ferrari_Logo.svg.png" width="70" height="70" alt="BMWlogo"></td>
+        <tr class="firstT">
+            <td><img src="./images/Ferrari_Logo.svg.png" alt="Flogo"></td>
             <td ><a href="https://www.bmw.ua/uk/index.html">офіційний сайт</a></td>
             <td>німецький автобудівний та авіамоторний концерн</td>
         </tr>
-        <tr>
-            <td><img src="./images/Koenigsegg-logo-1994-2048x2048.png" width="70" height="70" alt="BMWlogo"></td>
+        <tr class="secondT">
+            <td><img src="./images/Koenigsegg-logo-1994-2048x2048.png" alt="Klogo"></td>
             <td ><a href="https://www.koenigsegg.com/home">офіційний сайт</a></td>
             <td>швецький автобудівний та авіамоторний концерн</td>
         </tr>
     </table>
-    <div style="margin-left: 200px;">
-        <img src="./images/toyota-rav4.webp" width="500px" height="300px" style="display: flexbox; ">
-        <img src="./images/BMW-X2-M35i.webp" width="500px" height="300px" style="display: flexbox;">
-        <img src="./images/ilyustratyvne-foto_large.jpg" width="500px" height="300px" style="display: flexbox;">
+    <div class="mainImages" >
+        <img src="./images/toyota-rav4.webp">
+        <img src="./images/BMW-X2-M35i.webp" >
+        <img src="./images/DSC_1039_f71561ef-1661-4986-835e-80eec6958c92.webp">
+        <img src="./images/1400x936.jpg">
+        <button id="galleryButton">Більше фотографій...</button>
     </div>
     
     <p id="secondParagraph">З розвитком технологій автомобілі зазнають постійних змін. Сучасні моделі оснащені 
@@ -75,6 +70,11 @@
         інформаційними системами, а також впроваджуються нові типи двигунів, 
         як-от електричні та гібридні. Виробники прагнуть зробити автомобілі більш економічними, 
         екологічними та зручними.<a href="#h1">Повернутись</a></p>
-    <p><font size=10>я ЛОХ</font></p>
+    <script src="./Mouse.js"></script>
+<footer>
+    <p style="color: gray; font-size: small; text-align: center;">Усі права захищено <span>Лабораторну виконав Чулій М. студент групи </span><strong>ІС-33</strong></p>
+</footer>
+    <script src="./script.js"></script>
 </body>
+
 </html>

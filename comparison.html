@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Chulii Mykhailo">
+    <link  rel="stylesheet" href="./index.css">
     <title>Порівняння авто</title>
-    <style>
-        body{
-            background-color: lightcyan;
-        }
-        a{
-            color:darkmagenta;
-        }
-        #secondParagraph{
-            margin-top: 00px;
-        }
-    </style>
+    
 </head>
 <body>
     <h1>Порівняння</h1>
-    <p><font size="4" color="green"><i>На цій сторінці ви зможете порівнювати авто</i></font></p>
-    <ul>
-        <li><a href="./index.html">На головну</a></li>
-        <li><a href="./gallery.html">Галерея</a></li>
-        <li><a href="./news.html">Новини у світі авто</a></li>
+    <p>На цій сторінці ви зможете порівнювати авто</p>
+
+    <ul >
+        <li class="Menu"><a href="./comparison.html">Порівняння</a></li>
+        <li class="Menu"><a href="./index.html">Головна сторінка</a></li>
+        <li class="Menu"><a href="./gallery.html">Галерея</a></li>
+        <li class="Menu"><a href="./news.html">Новини у світі авто</a></li>
+
     </ul>
-    <table cellspacing="5" cellpadding="10" border="1">
-        <caption><font size="4" color="darkcyan">Порівняння найпопулярніших моделей</font></caption>
+    <dl>
+        <dt>За їх:</dt>
+        <dd>Характеристиками</dd>
+        <dt>Та:</dt>
+        <dd>Ціною</dd>
+      </dl>
+      <h2>📌 Список автомобілів(можете додати свій автомобіль і згодом ми добавимо його у порівняння)</h2>
+      
+      <ul id="carList">
+        <li>BMW</li>
+        <li>Fiat</li>
+        <li>Audi</li>
+        <li>Mercedes</li>
+      </ul>
+    
+      <h2>⚙️ Меню дій</h2>
+      <div class="menu" id="menu">
+        <input type="text" id="carInput" placeholder="Введіть назву авто">
+        <button data-action="add">Додати авто</button>
+        <button data-action="remove">Видалити останнє</button>
+        <button data-action="clear">Очистити список</button>
+      </div>
+    <table cellspacing="5" cellpadding="10">
+        <caption>Порівняння найпопулярніших моделей</caption>
         <colgroup>
-            <col span="2"style="background-color: #f2f2f2;">
-            <col span="4" style="background-color: #fff;">
+            <col span="2">
+            <col span="4" >
         </colgroup>
    
         <thead>
@@ -85,5 +101,12 @@
             </tr>
         </tbody>
     </table>
+    <h2 id="hOfComp">Пропонуємо зрівняти вам ще деякі моделі:</h2>
+    <div class="compButns">
+        <button id="BMWM5">BMW M5 2021</button>
+        <button onclick="Fiat()">Fiat Linea 1.4 tjet 2009</button>
+    </div>
+    <script src="./scriptforCopm.js"></script>
+    <script src="./Mouse.js"></script>
 </body>
 </html>
