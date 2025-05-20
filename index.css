@@ -342,4 +342,7 @@ input[type="text"] {
   padding: 5px;
   font-size: 14px;
 }
-
+.Menu.hovered{
+   background-color: rgb(110, 14, 91);
+   color: rgb(209, 159, 159);
+}
